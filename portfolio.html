@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"
+    />
+
+    <!--styles-->
+    <link rel="stylesheet" href="/styles/default.css" />
+    <link rel="stylesheet" href="/styles/nav.css" />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/portfolio.css" />
+  </head>
+  <body>
+    <nav class="nav-index">
+      <h3>Rafael Victor</h3>
+
+      <ul>
+        <li>
+          <a href="/index.html">Home</a>
+        </li>
+        <li><a href="/about.html">About me</a></li>
+        <li><a href="/portfolio.html" class="selected">My portfolio</a></li>
+        <li><a href="/contact.html">Contact me</a></li>
+      </ul>
+
+      <ul>
+        <li>
+          <i class="fab fa-whatsapp"></i>
+        </li>
+        <li>
+          <i class="fab fa-instagram"></i>
+        </li>
+      </ul>
+    </nav>
+    <div class="menu-icon" onclick="toggleChangeClass(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <nav class="mobile-menu" id="mobile-menu">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About me</a>
+        <a href="/portfolio.html" class="selected">My portfolio</a>
+        <a href="/contact.html">Contact me</a>
+        <div class="icons">
+          <a>
+            <i class="fab fa-whatsapp"></i>
+          </li>
+          <a>
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </nav>
+
+    <section class="section">
+      <h1>My Work</h1>
+
+      <p>
+        Here, you will find a curated selection of my design work that showcases
+        my skills and expertise as a developer.
+      </p>
+
+      <div class="projects-container">
+        <div class="project" onclick="toggleOpenClass('temrango')">
+          <img
+            src="https://media.licdn.com/dms/image/D4D0BAQFe9yv6yci1yQ/company-logo_200_200/0/1688243108889?e=2147483647&v=beta&t=9I9GmZpt5EtNM8TIZlSbCZhLQrGbOEzVBGPl6XMLmSA"
+            alt=""
+            width="35rem"
+            height="35rem"
+          />
+        </div>
+        <div class="project" onclick="toggleOpenClass('sabor-aroma')">
+          <img
+            src="https://s3-alpha-sig.figma.com/img/4112/5a71/1cca008fbe5a2f64f8ab3f01eb7bc839?Expires=1697414400&Signature=YA7PEJHByPUAdQFM5OMLfzD3nnPsCeouk2Ldd35wWXCZWtuA-fLRT1J7eak6-phZkDz1KflLO8Mc2imD4hebXXUd5qKVpLzhVGWcH6ToHh1ipJETY1Z2F8nJSo0kpYW0BOZHQo8AmXgSf-Qhn241xQeq4RU2MAWJDp62yqYPjGl3LzMv8ZWmS7yAsg7JnG1M7adeQlTlN6R89IiU8i8diANqdrKAl52taRQH41hPpY6~OUxD0LG4TEWZma62Ae9so1AJLhvQSHQCXo~BlJUd-IsZJoqKye7bBhRkkmRcOmSfMPnUS8hY2G03K0EY2VSPw8wnNsVfE0ZrNquvvwTz8Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+            width="35rem"
+            height="35rem"
+          />
+        </div>
+      </div>
+    </section>
+
+    <div class="project-swiper" id="temrango">
+      <button class="close" onclick="toggleOpenClass('temrango')">
+        <div class="one"></div>
+        <div class="two"></div>
+      </button>
+
+      <swiper-container
+        style="width: 75%"
+        class="mySwiper"
+        navigation="true"
+        pagination="true"
+        keyboard="true"
+        mousewheel="true"
+        css-mode="true"
+      >
+        <swiper-slide>
+          <img
+            style="height: 35rem; width: 100%"
+            src="https://lojista.temrango.com.br/assets/img/home/temrango-mobile.svg"
+          />
+        </swiper-slide>
+        <swiper-slide>
+          <img
+            style="height: 35rem; width: 100%"
+            src="/img/digitalize.png"
+            alt=""
+          />
+        </swiper-slide>
+        <swiper-slide>
+          <img style="height: 35rem; width: 100%" src="/img/planos.png" />
+        </swiper-slide>
+      </swiper-container>
+    </div>
+
+    <div class="project-swiper" id="sabor-aroma">
+      <button class="close" onclick="toggleOpenClass('sabor-aroma')">
+        <div class="one"></div>
+        <div class="two"></div>
+      </button>
+
+      <swiper-container
+        style="width: 75%"
+        class="mySwiper"
+        navigation="true"
+        pagination="true"
+        keyboard="true"
+        mousewheel="true"
+        css-mode="true"
+      >
+        <swiper-slide>
+          <img
+            style="height: 35rem; width: 100%"
+            src="/img/store-interface.png"
+          />
+        </swiper-slide>
+        <swiper-slide>
+          <img
+            style="height: 35rem; width: 100%"
+            src="/img/checkout.png"
+            alt=""
+          />
+        </swiper-slide>
+        <swiper-slide>
+          <img style="height: 35rem; width: 100%" src="/img/product-details.png" />
+        </swiper-slide>
+      </swiper-container>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="/js/mouseTrail.js"></script>
+    <script src="/js/portfolio.js"></script>
+  </body>
+</html>

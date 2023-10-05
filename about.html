@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About me</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"
+    />
+    
+    <!--styles-->
+    <link rel="stylesheet" href="/styles/default.css" />
+    <link rel="stylesheet" href="/styles/nav.css" />
+    <link rel="stylesheet" href="/styles/about.css" />
+  </head>
+  <style>
+    p {
+      font-family: Inter;
+    }
+  </style>
+  <body>
+    <nav class="nav-index">
+      <h3>Rafael Victor</h3>
+
+      <ul>
+        <li>
+          <a href="/index.html">Home</a>
+        </li>
+        <li><a href="/about.html" class="selected">About me</a></li>
+        <li><a href="/portfolio.html">My portfolio</a></li>
+        <li><a href="/contact.html">Contact me</a></li>
+      </ul>
+
+      <ul>
+        <li>
+          <i class="fab fa-whatsapp"></i>
+        </li>
+        <li>
+          <i class="fab fa-instagram"></i>
+        </li>
+      </ul>
+    </nav>
+    <div class="menu-icon" onclick="toggleChangeClass(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <nav class="mobile-menu" id="mobile-menu">
+      <a href="/index.html">Home</a>
+      <a href="/about.html" class="selected" >About me</a>
+      <a href="/portfolio.html">My portfolio</a>
+      <a href="/contact.html">Contact me</a>
+      <div class="icons">
+        <a>
+          <i class="fab fa-whatsapp"></i>
+        </li>
+        <a>
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </nav>
+
+    <section
+      class="grid-2 section"
+      style="padding: 8rem 15rem; background: black; color: #fff"
+    >
+      <img
+        src="https://dukeampong.com/assets/img/profile-img.jpg"
+        style="width: 17rem; border-radius: 50%"
+        alt=""
+      />
+      <div>
+        <p>I'm Victor</p>
+        <p>
+          Web developer from Brazil, South America, with extensive experience in
+          the creative industry.
+        </p>
+        <p>
+          I'm largely expirienced with front-end as well as back-end. My main
+          technologies are Js/React and Php/Laravel.
+        </p>
+        <p>
+          My portfolio boasts a track record of working with global brands in
+          diverse sectors, including but not limited to technology, hospitality,
+          and entertainment.
+        </p>
+        <p>
+          My passion for creativity and design, coupled with a deep
+          understanding of market trends and consumer behavior, allows me to
+          craft visually stunning and effective design solutions that exceed
+          client expectations.
+        </p>
+      </div>
+      <a class="portfolio-link" href="/portfolio.html" >View my portfolio</a>
+    </section>
+
+    <footer>
+      <p>© Copyright <b>Rafael Victor</b>. All Rights Reserved</p>
+    </footer>
+
+    <script src="/js/mouseTrail.js"></script>
+  </body>
+</html>

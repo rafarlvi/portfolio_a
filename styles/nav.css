@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+nav {
+  font-family: Inter;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5%;
+  background: black;
+  color: #fff;
+}
+
+.nav-index {
+  position: fixed;
+  width: 100%;
+  align-items: center;
+  z-index: 99;
+  height: 5.5rem;
+}
+
+.section {
+  padding-top: 5.5rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+nav i {
+  font-size: 1.4rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+nav a.selected {
+  color: #fff;
+}
+
+nav h3 {
+  font-family: "Croissant One", cursive;
+  font-size: 1.6rem;
+}
+a:hover + .circle {
+  display: none;
+}
+
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999999; /* so that it stays on top of all other elements */
+  opacity: 0.2;
+}
+
+.mobile-menu {
+  display: none;
+  transition: 0.3s;
+}
+
+/*icon menu*/
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  right: 5%;
+  top: 4%;
+  z-index: 1111 !important;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+@media screen and (max-width: 800px) {
+  .mobile-menu {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+  }
+
+  .menu-icon {
+    display: inline-block;
+  }
+
+  .mobile-menu.open {
+    right: 0;
+  }
+
+  .mobile-menu .icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    position: absolute;
+    bottom: 5rem;
+  }
+
+  .mobile-menu .icons i {
+    color: #fff;
+    font-size: 1.6rem;
+  }
+
+  .nav-index ul {
+    display: none;
+  }
+}

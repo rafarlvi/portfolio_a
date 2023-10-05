@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"
+    />
+
+    <!--fonts-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    />
+
+    <!--styles-->
+    <link rel="stylesheet" href="/styles/default.css" />
+    <link rel="stylesheet" href="/styles/nav.css" />
+    <link rel="stylesheet" href="/styles/index.css" />
+
+    <!--Swiper-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <nav class="nav-index">
+      <h3>Rafael Victor</h3>
+
+      <ul>
+        <li>
+          <a class="selected" href="">Home</a>
+        </li>
+        <li><a href="/about.html">About me</a></li>
+        <li><a href="/portfolio.html">My portfolio</a></li>
+        <li><a href="/contact.html">Contact me</a></li>
+      </ul>
+
+      <ul>
+        <li>
+          <i class="fab fa-whatsapp"></i>
+        </li>
+        <li>
+          <i class="fab fa-instagram"></i>
+        </li>
+      </ul>
+    </nav>
+    <div class="menu-icon" onclick="toggleChangeClass(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <nav class="mobile-menu" id="mobile-menu">
+      <a class="selected" href="">Home</a>
+      <a href="/about.html">About me</a>
+      <a href="/portfolio.html">My portfolio</a>
+      <a href="/contact.html">Contact me</a>
+      <div class="icons">
+        <a>
+          <i class="fab fa-whatsapp"></i>
+        </li>
+        <a>
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </nav>
+
+    <section class="section" style="padding-bottom: 3rem">
+      <div class="m-auto" style="padding: 1rem 0rem">
+        <h1 id="text" ></h1>
+        <h2 id="WebDeveloper" >Web developer & <span>Full stack</span></h2>
+      </div>
+
+      <swiper-container
+        style="width: 75%"
+        class="mySwiper"
+        navigation="true"
+        pagination="true"
+        keyboard="true"
+        mousewheel="true"
+        css-mode="true"
+      >
+        <swiper-slide>
+          <img
+            style="height: 35rem; width: 100%"
+            src="https://dukeampong.com/assets/img/gallery/gallery-8.jpg"
+            alt=""
+          />
+        </swiper-slide>
+        <swiper-slide>
+          <img
+            style="height: 35rem; width: 100%"
+            src="https://dukeampong.com/assets/img/gallery/gallery-9.jpg"
+            alt=""
+          />
+        </swiper-slide>
+        <swiper-slide>
+          <img
+            style="height: 35rem; width: 100%"
+            src="https://dukeampong.com/assets/img/gallery/web%20dev.jpg"
+          />
+        </swiper-slide>
+        <swiper-slide>
+          <img
+            style="height: 35rem; width: 100%"
+            src="https://dukeampong.com/assets/img/gallery/strategy.jpg"
+          />
+        </swiper-slide>
+        <swiper-slide>
+          <img
+            style="height: 35rem; width: 100%"
+            src="https://dukeampong.com/assets/img/gallery/gallery-10.jpg"
+          />
+        </swiper-slide>
+      </swiper-container>
+    </section>
+
+    <footer>
+      <p>© Copyright <b>Rafael Victor</b>. All Rights Reserved</p>
+    </footer>
+
+    <script src="/js/mouseTrail.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+  </body>
+</html>

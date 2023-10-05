@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"
+    />
+
+    <!--styles-->
+    <link rel="stylesheet" href="/styles/default.css" />
+    <link rel="stylesheet" href="/styles/nav.css" />
+    <link rel="stylesheet" href="/styles/contact.css" />
+  </head>
+  <body>
+    <nav class="nav-index">
+      <h3>Rafael Victor</h3>
+
+      <ul>
+        <li>
+          <a href="/index.html">Home</a>
+        </li>
+        <li><a href="/about.html">About me</a></li>
+        <li><a href="/portfolio.html">My portfolio</a></li>
+        <li><a href="/contact.html" class="selected">Contact me</a></li>
+      </ul>
+
+      <ul>
+        <li>
+          <i class="fab fa-whatsapp"></i>
+        </li>
+        <li>
+          <i class="fab fa-instagram"></i>
+        </li>
+      </ul>
+    </nav>
+    <div class="menu-icon" onclick="toggleChangeClass(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <nav class="mobile-menu" id="mobile-menu">
+      <a href="/index.html">Home</a>
+      <a href="/about.html">About me</a>
+      <a href="/portfolio.html">My portfolio</a>
+      <a href="/contact.html" class="selected">Contact me</a>
+      <div class="icons">
+        <a>
+          <i class="fab fa-whatsapp"></i>
+        </li>
+        <a>
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </nav>
+
+    <section class="section">
+      <h1>More Enquiries</h1>
+      <h4 class="h4-contact-me">Contact me for further enquiries</h4>
+      <div class="grid-2 gap-3">
+        <input type="text" placeholder="Your Name/Company" />
+        <input type="text" placeholder="Your Email/Company Email" />
+      </div>
+      <input type="text" placeholder="Subject" />
+      <textarea placeholder="Your message"></textarea>
+      <button>Send message</button>
+    </section>
+
+    <footer>
+      <p>© Copyright Rafael Victor. All Rights Reserved</p>
+    </footer>
+
+    <!--circles-->
+    <script src="/js/mouseTrail.js"></script>
+  </body>
+</html>

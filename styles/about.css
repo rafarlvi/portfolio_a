@@ -1,0 +1,22 @@
+.portfolio-link {
+  color: red;
+  font-family: Inter;
+  border-radius: 0.4rem;
+  transition: 0.3s;
+}
+
+.portfolio-link:hover {
+  color: rgb(0, 255, 115);
+  text-decoration: underline;
+}
+.section {
+  padding-top: 10.5rem !important;
+}
+@media screen and (max-width: 800px) {
+  .section {
+    display: flex !important;
+    flex-flow: column;
+    padding: 1rem !important;
+    padding-top: 6.5rem !important;
+  }
+}
