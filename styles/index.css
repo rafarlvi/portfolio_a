@@ -51,4 +51,12 @@ h2 span {
   .mySwiper img {
     height: 25rem !important;
   }
+
+  h1 {
+    padding-top: 2rem;
+  }
+
+  h2 {
+    padding-bottom: 2rem;
+  }
 }
