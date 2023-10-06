@@ -144,4 +144,8 @@ a:hover + .circle {
   .nav-index ul {
     display: none;
   }
+
+  .circle {
+    display: none;
+  }
 }
